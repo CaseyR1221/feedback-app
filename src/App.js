@@ -14,7 +14,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <div>
+      <div className='container'>
+        <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
     </>
