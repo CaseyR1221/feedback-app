@@ -3,7 +3,7 @@ import { useContext } from "react"
 import FeedbackContext from "../context/FeedbackContext"
 import FeedbackItem from "./FeedbackItem"
 
-const FeedbackList = ({ handleDelete }) => {
+const FeedbackList = () => {
   const {feedback} = useContext(FeedbackContext)
 
   if (!feedback || feedback.length === 0) {
